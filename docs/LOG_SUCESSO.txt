@@ -1,0 +1,17 @@
+
+> tde-devops-ci@1.0.0 test
+> jest --runInBand
+
+PASS tests/CalculadoraFinanceira.test.js
+  CalculadoraFinanceira
+    ✓ deve somar dois valores financeiros (5 ms)
+    ✓ deve aplicar desconto percentual corretamente (1 ms)
+    ✓ deve calcular o valor de cada parcela (6 ms)
+    ✓ deve impedir percentual de desconto fora do intervalo permitido (10 ms)
+    ✓ deve impedir parcelamento com quantidade invalida (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        0.458 s, estimated 1 s
+Ran all test suites.

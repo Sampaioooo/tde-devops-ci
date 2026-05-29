@@ -1,0 +1,29 @@
+
+> tde-devops-ci@1.0.0 test
+> jest --runInBand
+
+FAIL tests/CalculadoraFinanceira.falha-proposital.test.js
+  ● Falha proposital para validar o GitHub Actions › deve falhar de proposito no primeiro envio
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 170
+    Received: 180
+
+    [0m [90m  6 |[39m
+     [90m  7 |[39m     [90m// Resultado correto seria 180. O valor 170 foi colocado apenas para gerar erro proposital no pipeline.[39m
+    [31m[1m>[22m[39m[90m  8 |[39m     expect(calculadora[33m.[39maplicarDesconto([35m200[39m[33m,[39m [35m10[39m))[33m.[39mtoBe([35m170[39m)[33m;[39m
+     [90m    |[39m                                                  [31m[1m^[22m[39m
+     [90m  9 |[39m   })[33m;[39m
+     [90m 10 |[39m })[33m;[39m
+     [90m 11 |[39m[0m
+
+      at Object.toBe (tests/CalculadoraFinanceira.falha-proposital.test.js:8:50)
+
+PASS tests/CalculadoraFinanceira.test.js
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        0.75 s, estimated 1 s
+Ran all test suites.

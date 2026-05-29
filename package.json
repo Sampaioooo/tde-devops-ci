@@ -1,0 +1,22 @@
+{
+  "name": "tde-devops-ci",
+  "version": "1.0.0",
+  "description": "TDE de Prática DevOps: pipeline de integração contínua com testes unitários e bloqueio de merge.",
+  "main": "src/CalculadoraFinanceira.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "devops",
+    "ci",
+    "github-actions",
+    "jest",
+    "testes-unitarios"
+  ],
+  "author": "Christian Samuel Sampaio Marinho",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
